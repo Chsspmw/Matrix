@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrix - O Escolhido</title>
+    
+    
+    <style>
+        @keyframes digitar {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+
+        @keyframes cursor {
+            from, to { border-color: transparent; }
+            50% { border-color: #00FF00; }
+        }
+
+        .efeito-digitar {
+            display: inline-block;
+            overflow: hidden; /* Garante que o texto suma antes de ser digitado */
+            white-space: nowrap; /* Impede o texto de quebrar linha durante a animação */
+            margin: 0 auto; 
+            border-right: 3px solid #00FF00; /* Simula o cursor do terminal de computador */
+            animation: 
+                digitar 3.5s steps(30, end) infinite alternate, /* Faz o texto digitar e apagar em loop */
+                cursor 0.75s step-end infinite;
+        }
+    </style>
+</head>
+<body style="background-image: url('https://wallpapersden.com'); background-size: cover; background-position: center top; background-repeat: no-repeat; background-attachment: fixed; color: #00FF00; font-family: 'Courier New', Courier, monospace; text-align: center; margin: 0; padding: 0; min-height: 100vh;">
+
+    
+    <audio id="cyber-sound" src="https://google.com" preload="auto"></audio>
+
+    <div style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.85)); min-height: 100vh; box-sizing: border-box; padding: 80px 20px;">
+
+        
+        <h1 style="color: #00CC00; font-size: 55px; text-shadow: 0px 0px 15px #00FF00; margin-bottom: 20px; font-weight: bold;">
+            Bem-vindo à <br>
+            <span class="efeito-digitar" style="color: #FFFFFF; text-shadow: 0px 0px 10px #FFFFFF;">[ MATRIX ]</span>
+        </h1>
+        
+        <p style="font-size: 22px; line-height: 1.6; max-width: 800px; margin: 0 auto 40px auto; color: #E0E0E0; text-shadow: 2px 2px 4px #000000;">
+            O que é a Matrix? O mundo real é uma simulação virtual criada por máquinas para subjugar a humanidade. 
+            Você está pronto para despertar da <em>ilusão</em>?
+        </p>
+
+        <div style="margin-top: 60px; background-color: rgba(0, 0, 0, 0.5); display: inline-block; padding: 30px; border-radius: 15px; border: 1px solid #113311;">
+            <p style="font-size: 24px; font-weight: bold; color: #FFFFFF; text-shadow: 1px 1px 5px #000000; margin-bottom: 25px;">
+                Morpheus oferece-lhe uma escolha:
+            </p>
+            
+            
+            <a href="#" onclick="tocarSom(); alert('Você escolheu continuar na ilusão... Acordando em sua cama.'); return false;" style="display: inline-block; background-color: #000066; color: #FFFFFF; padding: 20px 40px; text-decoration: none; border-radius: 10px; margin: 15px; font-weight: bold; border: 2px solid #0000FF; box-shadow: 0px 0px 15px #0000FF; font-size: 16px; letter-spacing: 1px;">
+                Pílula Azul: Continuar na Ilusão
+            </a>
+
+            
+            <a href="sinopse.html" onclick="tocarSom();" style="display: inline-block; background-color: #990000; color: #FFFFFF; padding: 20px 40px; text-decoration: none; border-radius: 10px; margin: 15px; font-weight: bold; border: 2px solid #FF0000; box-shadow: 0px 0px 15px #FF0000; font-size: 16px; letter-spacing: 1px;">
+                Pílula Vermelha: Descobrir a Verdade
+            </a>
+        </div>
+
+    </div>
+
+    <script>
+       
+        }
+    </script>
+
+</body>
+</html>
